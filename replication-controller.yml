@@ -8,13 +8,13 @@ spec:
  replicas: 3
  template:
   metadata:
-   name:
+   name: httpd_pod
    labels:
     author: intelliqit
-  spec: 
-   containers:
-    - name: myhttpd
-      image:
-      ports:
-       - containerPort: 80
-         hostPort: 8080
+ spec: 
+  containers:
+   - name: myhttpd
+     image: httpd 
+     ports:
+      - containerPort: 80
+        hostPort: 8080
