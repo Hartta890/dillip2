@@ -6,7 +6,7 @@ metadata:
   author: intelliqit
   type: proxyserver
 spec:
- replicas: 3
+ replicas: 4
  selector:
   matchLabels:
    type: proxyserver
@@ -17,4 +17,3 @@ spec:
      ports:
       - containerPort: 80
         hostPort: 8888
-        
