@@ -12,7 +12,7 @@ spec:
    type: proxyserver
  spec: 
   containers: 
-   - name: nginx:
+   - name: nginx
      image: nginx:1.7.9
      ports:
       - containerPort: 80
